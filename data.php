@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-
-
 $authors = [
     [
         'id' => 1,
@@ -31,7 +29,7 @@ $posts = [
     [
         'title' => 'The ugly truth about ice cream',
         'image' => 'img1.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/1.txt',
         'authorId' => 1,
         'date' => '10 October 2019',
         'likes' => '38'
@@ -39,7 +37,7 @@ $posts = [
     [
         'title' => 'Running is bad for your body',
         'image' => 'img2.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/2.txt',
         'authorId' => 2,
         'date' => '1 October 2019',
         'likes' => '201'
@@ -47,7 +45,7 @@ $posts = [
     [
         'title' => 'How to become a better partner',
         'image' => 'img3.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/3.txt',
         'authorId' => 3,
         'date' => '5 September 2019',
         'likes' => '11'
@@ -55,7 +53,7 @@ $posts = [
     [
         'title' => 'Trump wants to become the prime minister of Sweden',
         'image' => 'img4.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/4.txt',
         'authorId' => 4,
         'date' => '10 August 2019',
         'likes' => '5'
@@ -63,7 +61,7 @@ $posts = [
     [
         'title' => 'Why you should watch more TV',
         'image' => 'img5.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/5.txt',
         'authorId' => 5,
         'date' => '16 May 2019',
         'likes' => '877'
@@ -71,15 +69,15 @@ $posts = [
     [
         'title' => 'Elephants escaped from the zoo',
         'image' => 'img6.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/6.txt',
         'authorId' => 1,
         'date' => '10 May 2019',
         'likes' => '43'
     ],
     [
-        'title' => 'David Letterman return at the Tonight Show',
+        'title' => 'David Letterman returns at the Late Show',
         'image' => 'img7.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/7.txt',
         'authorId' => 2,
         'date' => '22 October 2019',
         'likes' => '34'
@@ -87,7 +85,7 @@ $posts = [
     [
         'title' => 'Peanuts is actually a fruit',
         'image' => 'img8.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/8.txt',
         'authorId' => 3,
         'date' => '3 June 2019',
         'likes' => '23'
@@ -95,7 +93,7 @@ $posts = [
     [
         'title' => 'The meaning of everything',
         'image' => 'img9.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/9.txt',
         'authorId' => 4,
         'date' => '2 April 2019',
         'likes' => '24'
@@ -103,13 +101,12 @@ $posts = [
     [
         'title' => 'McDonalds stops selling meat',
         'image' => 'img10.jpg',
-        'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
+        'content' => './texts/10.txt',
         'authorId' => 5,
         'date' => '4 March 2019',
         'likes' => '68'
     ],
 ];
-
 
 
 

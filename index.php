@@ -1,7 +1,7 @@
 <?php
 
-require __DIR__.'/data.php';
-require __DIR__.'/functions.php';
+require __DIR__ . '/data.php';
+require __DIR__ . '/functions.php';
 
 
 
@@ -21,17 +21,17 @@ require __DIR__.'/functions.php';
 
 <body>
 
-<?php foreach ($posts as $post) : ?>
+    <?php foreach ($posts as $post) : ?>
 
-    <article>
+        <article>
 
-            <img src="/img/<?=$post['image']?>" alt="">
-            <h1><?=$post['title']?></h1>
-            <p><?=$post['content']?></p>
-            <p><?=getAuthor($post, $authors)?></p>
-            <p><?=$post['date']?></p>
+            <img src="/img/<?= $post['image'] ?>" alt="">
+            <h1><?= $post['title'] ?></h1>
+            <p><?= file_get_contents($post['content']) ?></p>
+            <p><?= getAuthor($post, $authors) ?></p>
+            <p><?= $post['date'] ?></p>
 
-    </article>
+        </article>
 
     <?php endforeach; ?>
 
