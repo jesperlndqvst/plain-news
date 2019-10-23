@@ -32,6 +32,7 @@ $authors = [
 $posts = [
     [
         'title' => 'The ugly truth about ice cream',
+        'image' => 'img1.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[0]['name'],
         'date' => '2019-10-23',
@@ -39,6 +40,7 @@ $posts = [
     ],
     [
         'title' => 'Running is bad for your body',
+        'image' => 'img2.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[1]['name'],
         'date' => '2019-10-22',
@@ -46,6 +48,7 @@ $posts = [
     ],
     [
         'title' => 'How to become a better partner',
+        'image' => 'img3.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[2]['name'],
         'date' => '2019-10-05',
@@ -53,6 +56,7 @@ $posts = [
     ],
     [
         'title' => 'Trump wants to become the prime minister of Sweden',
+        'image' => 'img4.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[3]['name'],
         'date' => '2019-10-15',
@@ -60,6 +64,7 @@ $posts = [
     ],
     [
         'title' => 'Why you should watch more TV',
+        'image' => 'img5.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[4]['name'],
         'date' => '2019-10-17',
@@ -67,6 +72,7 @@ $posts = [
     ],
     [
         'title' => 'Elephants escaped from the zoo',
+        'image' => 'img6.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[0]['name'],
         'date' => '2019-10-16',
@@ -74,6 +80,7 @@ $posts = [
     ],
     [
         'title' => 'David Letterman does come back at the Tonight Show',
+        'image' => 'img7.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[1]['name'],
         'date' => '2019-10-01',
@@ -81,6 +88,7 @@ $posts = [
     ],
     [
         'title' => 'Peanuts is actually a fruit',
+        'image' => 'img8.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[2]['name'],
         'date' => '2019-10-14',
@@ -88,6 +96,7 @@ $posts = [
     ],
     [
         'title' => 'The meaning of everything',
+        'image' => 'img9.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[3]['name'],
         'date' => '2019-09-12',
@@ -95,6 +104,7 @@ $posts = [
     ],
     [
         'title' => 'McDonalds stops selling meat',
+        'image' => 'img10.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'author' => $authors[4]['name'],
         'date' => '2019-08-25',
