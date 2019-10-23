@@ -1,7 +1,7 @@
 <?php
 
-require __DIR__ . '/data.php';
-require __DIR__ . '/functions.php';
+require __DIR__.'/data.php';
+require __DIR__.'/functions.php';
 
 ?>
 
@@ -26,7 +26,7 @@ require __DIR__ . '/functions.php';
             <img src="/img/<?=$post['image']?>" alt="">
             <h1><?=$post['title']?></h1>
             <p><?=$post['content']?></p>
-            <p><?=$post['author']?></p>
+            <p><?=getAuthor($post, $authors)?></p>
             <p><?=$post['date']?></p>
 
         <?php endforeach; ?>
