@@ -3,6 +3,8 @@
 require __DIR__.'/data.php';
 require __DIR__.'/functions.php';
 
+
+
 ?>
 
 
@@ -19,9 +21,9 @@ require __DIR__.'/functions.php';
 
 <body>
 
-    <article>
+<?php foreach ($posts as $post) : ?>
 
-        <?php foreach ($posts as $post) : ?>
+    <article>
 
             <img src="/img/<?=$post['image']?>" alt="">
             <h1><?=$post['title']?></h1>
@@ -29,9 +31,9 @@ require __DIR__.'/functions.php';
             <p><?=getAuthor($post, $authors)?></p>
             <p><?=$post['date']?></p>
 
-        <?php endforeach; ?>
-
     </article>
+
+    <?php endforeach; ?>
 
 </body>
 

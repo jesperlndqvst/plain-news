@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require __DIR__.'/data.php';
+
 
 function getAuthor(array $posts, array $authors): string
 {
@@ -11,4 +11,28 @@ function getAuthor(array $posts, array $authors): string
             return $author['name'];
         }
     }
+}
+
+
+
+function orderByDate(array $posts): array
+{
+
+    foreach ($posts as $post) {
+        $dateStrings[] = $post['date'];
+    }
+
+    function compareDates(string $date1, string $date2): int
+    {
+        if (strtotime($date1) < strtotime($date2))
+            return 1;
+        else if (strtotime($date1) > strtotime($date2))
+            return -1;
+        else
+            return 0;
+    }
+
+    usort($dateStrings, "compareDates");
+
+    return $dateStrings;
 }

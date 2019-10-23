@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+
+
 $authors = [
     [
         'id' => 1,
@@ -31,7 +33,7 @@ $posts = [
         'image' => 'img1.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 1,
-        'date' => '2019-10-23',
+        'date' => '10 October 2019',
         'likes' => '38'
     ],
     [
@@ -39,7 +41,7 @@ $posts = [
         'image' => 'img2.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 2,
-        'date' => '2019-10-22',
+        'date' => '1 October 2019',
         'likes' => '201'
     ],
     [
@@ -47,7 +49,7 @@ $posts = [
         'image' => 'img3.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 3,
-        'date' => '2019-10-05',
+        'date' => '5 September 2019',
         'likes' => '11'
     ],
     [
@@ -55,7 +57,7 @@ $posts = [
         'image' => 'img4.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 4,
-        'date' => '2019-10-15',
+        'date' => '10 August 2019',
         'likes' => '5'
     ],
     [
@@ -63,7 +65,7 @@ $posts = [
         'image' => 'img5.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 5,
-        'date' => '2019-10-17',
+        'date' => '16 May 2019',
         'likes' => '877'
     ],
     [
@@ -71,7 +73,7 @@ $posts = [
         'image' => 'img6.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 1,
-        'date' => '2019-10-16',
+        'date' => '10 May 2019',
         'likes' => '43'
     ],
     [
@@ -79,7 +81,7 @@ $posts = [
         'image' => 'img7.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 2,
-        'date' => '2019-10-01',
+        'date' => '22 October 2019',
         'likes' => '34'
     ],
     [
@@ -87,7 +89,7 @@ $posts = [
         'image' => 'img8.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 3,
-        'date' => '2019-10-14',
+        'date' => '3 June 2019',
         'likes' => '23'
     ],
     [
@@ -95,7 +97,7 @@ $posts = [
         'image' => 'img9.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 4,
-        'date' => '2019-09-12',
+        'date' => '2 April 2019',
         'likes' => '24'
     ],
     [
@@ -103,7 +105,14 @@ $posts = [
         'image' => 'img10.jpg',
         'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, id?',
         'authorId' => 5,
-        'date' => '2019-08-25',
+        'date' => '4 March 2019',
         'likes' => '68'
     ],
 ];
+
+
+
+
+
+
+
