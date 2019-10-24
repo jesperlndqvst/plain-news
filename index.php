@@ -21,19 +21,26 @@ require __DIR__ . '/functions.php';
 
 <body>
 
-    <?php foreach ($posts as $post) : ?>
+    <div class="container">
 
-        <article>
+        <nav>Plain News</nav>
 
-            <img src="/img/<?= $post['image'] ?>" alt="article-image" loading="lazy">
-            <h1><?= $post['title'] ?></h1>
-            <p><?= file_get_contents($post['content']) ?></p>
-            <p><?= getAuthor($post, $authors) ?></p>
-            <p><?= $post['date'] ?></p>
+        <?php foreach ($posts as $post) : ?>
 
-        </article>
+            <article>
 
-    <?php endforeach; ?>
+                <img src="/img/<?= $post['image'] ?>" alt="article-image" loading="lazy">
+                <h1><?= $post['title'] ?></h1>
+                <p><?= file_get_contents($post['content']) ?></p>
+                <p><?= getAuthor($post, $authors) ?></p>
+                <p><?= $post['date'] ?></p>
+                <p>Likes: <?= $post['likes'] ?></p>
+
+            </article>
+
+        <?php endforeach; ?>
+
+    </div>
 
 </body>
 

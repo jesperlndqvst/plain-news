@@ -23,14 +23,14 @@ function getAuthor(array $posts, array $authors): string
 /**
  * Converets an array of strings to integers and sorts them in order from which date comes first.
  *
- * @param array $date1
- * @param array $date2
+ * @param array $first
+ * @param array $second
  *
  * @return string
  */
 
-function sortFunction(array $date1, array $date2) : int {
-    return strtotime($date2["date"]) - strtotime($date1["date"]);
+function sortFunction(array $first, array $second) : int {
+    return strtotime($second["date"]) - strtotime($first["date"]);
 }
 
 usort($posts, "sortFunction");
