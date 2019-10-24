@@ -2,7 +2,7 @@
 
 require __DIR__ . '/data.php';
 require __DIR__ . '/functions.php';
-
+usort($posts, "sortFunction");
 
 
 ?>
