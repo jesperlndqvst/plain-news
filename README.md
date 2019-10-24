@@ -2,4 +2,4 @@
 A news feed with fake news articles in PHP.
 
 # Installation
-Open a php server in your terminal and use your web browser to run the program.
+Clone this repo to your desktop and open a php server in your terminal to run the program.
