@@ -25,7 +25,7 @@ require __DIR__ . '/functions.php';
 
         <article>
 
-            <img src="/img/<?= $post['image'] ?>" alt="">
+            <img src="/img/<?= $post['image'] ?>" alt="article-image" loading="lazy">
             <h1><?= $post['title'] ?></h1>
             <p><?= file_get_contents($post['content']) ?></p>
             <p><?= getAuthor($post, $authors) ?></p>
