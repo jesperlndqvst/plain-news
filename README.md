@@ -1,3 +1,5 @@
+<img src="https://media.giphy.com/media/xUNemVaUZFSgHxvQXK/giphy.gif" width="100%">
+
 # plain-news
 A news feed with fake news articles in PHP.
 
