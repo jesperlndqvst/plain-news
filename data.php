@@ -43,7 +43,7 @@ $posts = [
         'likes' => '201'
     ],
     [
-        'title' => 'How to become a better partner',
+        'title' => 'Science shows that the egg came before the chicken',
         'image' => 'img3.jpg',
         'content' => './texts/3.txt',
         'authorId' => 3,

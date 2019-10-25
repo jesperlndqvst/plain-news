@@ -31,14 +31,19 @@ usort($posts, "sortFunction");
 
             <article>
 
-                <img src="/img/<?= $post['image'] ?>" class="article-img" alt="article-image" loading="lazy">
-                <h1><?= $post['title'] ?></h1>
-                <p><?= file_get_contents($post['content']) ?></p>
-                <p><?= getAuthor($post, $authors) ?></p>
-                <p><?= $post['date'] ?></p>
-                <div class="likes">
-                <p>Likes: <?= $post['likes'] ?></p>
-                <img src="./img/like.svg" class="like-img" alt="like" loading="lazy">
+                <div class="text">
+
+                    <h2><?= $post['title'] ?></h2>
+                    <p><?= file_get_contents($post['content']) ?></p>
+                    <p><?= getAuthor($post, $authors) ?></p>
+                    <p><?= $post['date'] ?></p>
+                    <div class="likes">
+                        <p>Likes: <?= $post['likes'] ?></p>
+                        <img src="./img/like.svg" class="like-img" alt="like" loading="lazy">
+                    </div>
+                </div>
+                <div class="article-img">
+                    <img src="/img/<?= $post['image'] ?>" alt="article-image" loading="lazy">
                 </div>
 
             </article>
