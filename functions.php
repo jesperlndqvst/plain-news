@@ -33,4 +33,3 @@ function sortFunction(array $first, array $second) : int {
     return strtotime($second["date"]) - strtotime($first["date"]);
 }
 
-usort($posts, "sortFunction");
