@@ -5,45 +5,45 @@ declare(strict_types=1);
 $authors = [
     [
         'id' => 1,
-        'name' => 'Karl-Gunnar Gren'
+        'name' => 'Cameron James'
     ],
     [
         'id' => 2,
-        'name' => 'Steffan Pärsson'
+        'name' => 'Kelly Santiago'
     ],
     [
         'id' => 3,
-        'name' => 'Maria Erlandsson'
+        'name' => 'Khia Boyer'
     ],
     [
         'id' => 4,
-        'name' => 'Vasilios Bartziokas'
+        'name' => 'Rayhan Case'
     ],
     [
         'id' => 5,
-        'name' => 'Moa Strandberg'
+        'name' => 'Sienna-Rose Macleod'
     ]
 ];
 
 $posts = [
     [
-        'title' => 'The ugly truth about ice cream',
+        'title' => "The ugly truth about ice cream",
         'image' => 'img1.jpg',
         'content' => './texts/1.txt',
         'authorId' => 1,
-        'date' => '10 October 2019',
+        'date' => '10 January 2019',
         'likes' => '38'
     ],
     [
-        'title' => 'Running is bad for your body',
+        'title' => "Seinfeld is getting a reboot next year",
         'image' => 'img2.jpg',
         'content' => './texts/2.txt',
         'authorId' => 2,
-        'date' => '1 October 2019',
+        'date' => '1 April 2019',
         'likes' => '201'
     ],
     [
-        'title' => 'Science shows that the egg came before the chicken',
+        'title' => "Science shows that the egg came before the chicken",
         'image' => 'img3.jpg',
         'content' => './texts/3.txt',
         'authorId' => 3,
@@ -51,7 +51,7 @@ $posts = [
         'likes' => '11'
     ],
     [
-        'title' => 'Trump wants to become the prime minister of Sweden',
+        'title' => "Trump wants to become the prime minister of Sweden",
         'image' => 'img4.jpg',
         'content' => './texts/4.txt',
         'authorId' => 4,
@@ -59,15 +59,15 @@ $posts = [
         'likes' => '5'
     ],
     [
-        'title' => 'Why you should watch more TV',
+        'title' => "Sorry NASA, earth is flat",
         'image' => 'img5.jpg',
         'content' => './texts/5.txt',
         'authorId' => 5,
-        'date' => '16 May 2019',
+        'date' => '22 October 2019',
         'likes' => '877'
     ],
     [
-        'title' => 'Elephants escaped from the zoo',
+        'title' => "Oooh, That's Gonna Leave a Mark Wahlberg",
         'image' => 'img6.jpg',
         'content' => './texts/6.txt',
         'authorId' => 1,
@@ -75,7 +75,7 @@ $posts = [
         'likes' => '43'
     ],
     [
-        'title' => 'David Letterman returns at the Late Show',
+        'title' => "David Letterman returns at the Late Show",
         'image' => 'img7.jpg',
         'content' => './texts/7.txt',
         'authorId' => 2,
@@ -83,7 +83,7 @@ $posts = [
         'likes' => '34'
     ],
     [
-        'title' => 'Peanuts is actually a fruit',
+        'title' => "Peanuts is actually a fruit",
         'image' => 'img8.jpg',
         'content' => './texts/8.txt',
         'authorId' => 3,
@@ -91,7 +91,7 @@ $posts = [
         'likes' => '23'
     ],
     [
-        'title' => 'The meaning of everything',
+        'title' => "Humanity Is on Sale for $600",
         'image' => 'img9.jpg',
         'content' => './texts/9.txt',
         'authorId' => 4,
@@ -99,7 +99,7 @@ $posts = [
         'likes' => '24'
     ],
     [
-        'title' => 'McDonalds stops selling meat',
+        'title' => "Mark Zuckerberg Wants to Build Solar System",
         'image' => 'img10.jpg',
         'content' => './texts/10.txt',
         'authorId' => 5,
