@@ -12,3 +12,8 @@ php -S localhost:8000
 
 ## Testers
 * Erik Johannesson
+
+
+## License
+
+This project is licensed under the MIT License.
