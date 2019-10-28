@@ -3,7 +3,7 @@
 require __DIR__ . '/functions.php';
 
 // Connects to database
-$pdo = new PDO('sqlite:data.db');
+$pdo = new PDO('sqlite:./database/data.db');
 
 // Prepares and executes SQL statements
 $usersStmt = $pdo->prepare("SELECT * FROM users");

@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @return string
  */
 
-function getUser(array $posts, array $users)
+function getUser(array $posts, array $users): string
 {
     foreach ($users as $user) {
         if ($posts['authorId'] === $user['id']) {
@@ -29,7 +29,7 @@ function getUser(array $posts, array $users)
  * @return string
  */
 
-function sortFunction(array $first, array $second) : int {
+function sortFunction(array $first, array $second): int
+{
     return strtotime($second["date"]) - strtotime($first["date"]);
 }
-
