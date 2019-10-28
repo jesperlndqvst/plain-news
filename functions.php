@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * Return a random number between 100 and 10 000
+ * Returns a random number between 100 and 10 000
  *
  * @return int
  */
