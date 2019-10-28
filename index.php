@@ -43,10 +43,10 @@ $posts = $postsQuery->fetchAll(PDO::FETCH_ASSOC);
                     <div class="article-info">
                         <div class="written-by">
                             <p><?= $post['name'] ?></p>
-                            <p><?= $post['date'] ?></p>
+                            <p><?= formatDate($post['date']) ?></p>
                         </div>
                         <div class="likes">
-                            <p><i class="fas fa-heart"></i> <?= getRandomNumber() ?></p>
+                            <p><i class="fas fa-heart"></i> <?= $post['likes'] ?></p>
                         </div>
                     </div>
                 </div>

@@ -3,13 +3,12 @@
 declare(strict_types=1);
 
 /**
- * Returns a random number between 100 and 10 000
+ * Converts the format of a date string
  *
- * @return int
+ * @return string
  */
 
- function getRandomNumber() : int {
-    return rand(100, 10000);
+ function formatDate(string $date) : string {
+    $dateCreate = date_create($date);
+    return date_format($dateCreate, 'l jS F Y');
  }
-
-
