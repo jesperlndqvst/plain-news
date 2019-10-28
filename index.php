@@ -15,7 +15,7 @@ $postsStmt->execute();
 $users = $usersStmt->fetchAll(PDO::FETCH_ASSOC);
 $posts = $postsStmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Sorts by date
+// Sorts the articles by date
 usort($posts, "sortFunction");
 
 
