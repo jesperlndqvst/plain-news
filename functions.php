@@ -3,19 +3,19 @@
 declare(strict_types=1);
 
 /**
- * Links the post id and author id togheter and returns the author name.
+ * Links the post id and user id togheter and returns the user name.
  *
  * @param array $posts
- * @param array $authors
+ * @param array $users
  *
  * @return string
  */
 
-function getAuthor(array $posts, array $authors): string
+function getUser(array $posts, array $users)
 {
-    foreach ($authors as $author) {
-        if ($posts['authorId'] === $author['id']) {
-            return $author['name'];
+    foreach ($users as $user) {
+        if ($posts['authorId'] === $user['id']) {
+            return $user['name'];
         }
     }
 }

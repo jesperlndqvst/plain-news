@@ -1,8 +1,23 @@
 <?php
 
-require __DIR__ . '/data.php';
 require __DIR__ . '/functions.php';
+
+// Connects to database
+$pdo = new PDO('sqlite:data.db');
+
+// Prepares and executes SQL statements
+$usersStmt = $pdo->prepare("SELECT * FROM users");
+$postsStmt = $pdo->prepare("SELECT * FROM posts");
+$usersStmt->execute();
+$postsStmt->execute();
+
+// Get the reults as an array with column names as array keys
+$users = $usersStmt->fetchAll(PDO::FETCH_ASSOC);
+$posts = $postsStmt->fetchAll(PDO::FETCH_ASSOC);
+
+// Sorts by date
 usort($posts, "sortFunction");
+
 
 ?>
 
@@ -33,10 +48,10 @@ usort($posts, "sortFunction");
                 </div>
                 <div class="article-text">
                     <h2 class="article-heading"><?= $post['title'] ?></h2>
-                    <p><?= file_get_contents($post['content']) ?></p>
+                    <p><?= $post['content'] ?></p>
                     <div class="article-info">
                         <div class="written-by">
-                            <p><?= getAuthor($post, $authors) ?></p>
+                            <p><?= getUser($post, $users) ?></p>
                             <p><?= $post['date'] ?></p>
                         </div>
                         <div class="likes">
