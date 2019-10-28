@@ -3,21 +3,12 @@
 require __DIR__ . '/functions.php';
 
 // Connects to database
-$pdo = new PDO('sqlite:./database/data.db');
+$databaseFile = __DIR__ .'/database/data.db';
+$pdo = new PDO("sqlite:$databaseFile");
 
-// Prepares and executes SQL statements
-$usersStmt = $pdo->prepare("SELECT * FROM users");
-$postsStmt = $pdo->prepare("SELECT * FROM posts");
-$usersStmt->execute();
-$postsStmt->execute();
-
-// Get the reults as an array with column names as array keys
-$users = $usersStmt->fetchAll(PDO::FETCH_ASSOC);
-$posts = $postsStmt->fetchAll(PDO::FETCH_ASSOC);
-
-// Sorts the articles by date
-usort($posts, "sortFunction");
-
+// Makes a query and converts it to an array
+$postsQuery = $pdo->query('SELECT * FROM posts LEFT JOIN users ON posts.authorId = users.id ORDER BY date DESC');
+$posts = $postsQuery->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -51,11 +42,11 @@ usort($posts, "sortFunction");
                     <p><?= $post['content'] ?></p>
                     <div class="article-info">
                         <div class="written-by">
-                            <p><?= getUser($post, $users) ?></p>
+                            <p><?= $post['name'] ?></p>
                             <p><?= $post['date'] ?></p>
                         </div>
                         <div class="likes">
-                            <p><i class="fas fa-heart"></i> <?= $post['likes'] ?></p>
+                            <p><i class="fas fa-heart"></i> <?= getRandomNumber() ?></p>
                         </div>
                     </div>
                 </div>

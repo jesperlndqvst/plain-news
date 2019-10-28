@@ -3,33 +3,13 @@
 declare(strict_types=1);
 
 /**
- * Links the post id and user id togheter and returns the user name.
+ * Return a random number between 100 and 10 000
  *
- * @param array $posts
- * @param array $users
- *
- * @return string
+ * @return int
  */
 
-function getUser(array $posts, array $users): string
-{
-    foreach ($users as $user) {
-        if ($posts['authorId'] === $user['id']) {
-            return $user['name'];
-        }
-    }
-}
+ function getRandomNumber() : int {
+    return rand(100, 10000);
+ }
 
-/**
- * Converets an array of strings to integers and sorts them in order from which date comes first.
- *
- * @param array $first
- * @param array $second
- *
- * @return string
- */
 
-function sortFunction(array $first, array $second): int
-{
-    return strtotime($second["date"]) - strtotime($first["date"]);
-}

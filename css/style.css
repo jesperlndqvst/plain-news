@@ -66,6 +66,8 @@ body {
   color: #d02670;
 }
 
+/* Media Queries */
+
 @media (min-width: 850px) {
 
   .nav-bar {
