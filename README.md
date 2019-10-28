@@ -4,7 +4,7 @@
 A news feed with fake news articles in PHP and SQLite.
 
 # Installation
-Clone this repo and start a PHP server in your terminal by going in to the repo root folder and entering: 
+Clone this repo and start a PHP server in your terminal by entering the repo root folder and type:
 
 ```bash
 php -S localhost:8000
