@@ -2,7 +2,7 @@
 
 # Plain News
 
-This is my first school assignment as a web developer at YRGO, with the goal of creating a news feed with fake news articles built with PHP, SQLite, HTML and CSS.
+This is my first school assignment as a web developer at YRGO, with the goal of creating a news feed with fake news articles. Built with PHP, SQLite, HTML and CSS.
 
 ## Installation
 
