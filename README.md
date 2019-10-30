@@ -14,6 +14,8 @@ php -S localhost:8000
 * Erik Johannesson
 * Henrik Björkvall
 
+## Code Review
+* Betsy Alva Soplin
 
 ## License
 
