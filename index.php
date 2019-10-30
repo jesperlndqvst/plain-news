@@ -6,7 +6,7 @@ require __DIR__ . '/functions.php';
 $databaseFile = __DIR__ .'/database/data.db';
 $pdo = new PDO("sqlite:$databaseFile");
 
-// Makes a query and converts it to an array
+// Makes a query and converts it into an array
 $postsQuery = $pdo->query('SELECT * FROM posts INNER JOIN users ON posts.authorId = users.id ORDER BY date DESC');
 $posts = $postsQuery->fetchAll(PDO::FETCH_ASSOC);
 
