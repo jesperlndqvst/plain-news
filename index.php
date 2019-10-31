@@ -3,11 +3,15 @@
 require __DIR__ . '/functions.php';
 
 // Connects to database
-$databaseFile = __DIR__ .'/database/data.db';
+$databaseFile = __DIR__ . '/database/data.db';
 $pdo = new PDO("sqlite:$databaseFile");
 
-// Makes a query and converts it into an array
-$postsQuery = $pdo->query('SELECT * FROM posts INNER JOIN users ON posts.authorId = users.id ORDER BY date DESC');
+// Makes a query to SQLite database and converts it into an array
+$postsQuery = $pdo->query('SELECT * FROM posts
+INNER JOIN users
+ON posts.authorId = users.id
+ORDER BY date DESC');
+
 $posts = $postsQuery->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
@@ -35,18 +39,18 @@ $posts = $postsQuery->fetchAll(PDO::FETCH_ASSOC);
 
             <article class="article">
                 <div class="article-img">
-                    <img src="/img/<?= $post['image'] ?>" alt="article-image" loading="lazy">
+                    <img src="/img/<?= $post['image']; ?>" alt="article-image" loading="lazy">
                 </div>
                 <div class="article-text">
-                    <h2 class="article-heading"><?= $post['title'] ?></h2>
-                    <p><?= $post['content'] ?></p>
+                    <h2 class="article-heading"><?= $post['title']; ?></h2>
+                    <p><?= $post['content']; ?></p>
                     <div class="article-info">
                         <div class="written-by">
-                            <p><?= $post['name'] ?></p>
-                            <p><?= formatDate($post['date']) ?></p>
+                            <p><?= $post['name']; ?></p>
+                            <p><?= formatDate($post['date']); ?></p>
                         </div>
                         <div class="likes">
-                            <p><i class="fas fa-heart"></i> <?= $post['likes'] ?></p>
+                            <p><i class="fas fa-heart"></i> <?= $post['likes']; ?></p>
                         </div>
                     </div>
                 </div>

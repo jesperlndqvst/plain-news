@@ -3,7 +3,9 @@
 declare(strict_types=1);
 
 /**
- * Converts the format of a date string
+ * Converts date strings to a new format.
+ *
+ * @param string $date
  *
  * @return string
  */
