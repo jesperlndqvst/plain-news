@@ -29,7 +29,8 @@ php -S localhost:8000
 
 - ~~functions.php - Don’t forget to add your parameters in the docblock.~~
 
-- Overall - Maybe you could try to keep the same naming (camel case or kebab case) on all languages.<br>
+- Overall - Maybe you could try to keep the same naming (camel case or kebab case) on all languages.
+<br>
 *- Betsy Alva Soplin*
 
 ## License
